@@ -1,0 +1,20 @@
+e {
+    font-size: medium;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid gray
+}
+
+e.td {
+  border-radius: 30px
+}
+
+img {
+  padding: 1px;
+  margin: 1em auto;
+  float: center;
+}
+
+e.comment-box {
+    list-style: none
+    float: center;
+}
