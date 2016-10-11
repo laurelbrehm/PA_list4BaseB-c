@@ -2,15 +2,15 @@ var shuffleSequence= seq("consent","intro1","intro2","spk0","p1","intro3","p2","
 
 var practiceItemTypes = ["practice"];
 var centerItems = true;
-var completionMessage = "Results sent to server. Your completion code is GTxt6Kyp7X.";
+var completionMessage = "Results sent to server. Your completion code is PNItUHdEk$.";
 var sendingResultsMessage = "Sending results to server. This may take a little while-- leave this window open until results are sent!";
 
 
 var defaults = [
     "Separator", {
-        transfer: 1000, //wait for 1000ms
+        transfer: 500, //wait for 1000ms
           //other options: "keypress", "click"
-        normalMessage: "+", //message to be displayed
+        normalMessage: " ", //message to be displayed
         errorMessage: "Incorrect" //message to be displayed in red
     },
 
@@ -23,7 +23,7 @@ var defaults = [
 
     "Email", {
         hideProgressBar: true,
-        transfer: 3000,
+        transfer: 2500,
         hasCorrect: false,
         instructions: "Press space to read message"
     },
@@ -79,7 +79,7 @@ var items = [
 
 	["intro2", "Message", {html: { include: "instr1.html" } } ],
 
-    ["spk0", "Message", {html: { include: 'Speaker0.html' }, transfer: 12000, hideProgressBar: false}],
+    ["spk0", "Message", {html: { include: 'Speaker0.html' }, transfer: 14000, hideProgressBar: false}],
 
     ["p1", "Message", {html: { include: "instr2.html" } }, 
     "Email", {s1: "Message from Emily", s2: "RE: breakfast", as: [["keyCode: 32","https://sites.psu.edu/laurelbrehm/files/2016/09/emily-bubble-1gn8tl7.jpg"]]}, 
